@@ -1,0 +1,10 @@
+Poster grid inspection (Aug 12, 2026):
+- Current website asset: client/public/manus-storage/posters_collection.png, 1200x900, arranged as a 3x3 grid of 400x300 cells.
+- The current asset visibly contains six original poster tiles and three white empty cells; the user explicitly requested five new posters based on the intended collection layout.
+- Five new standalone posters were generated at 1632x2176, saved as poster_new_01.png through poster_new_05.png.
+- For the requested 3x3 final, use four strongest original tiles from the current composite plus all five generated posters. Preserve original tile presentation and place generated vertical posters inside filled, blurred-background tiles so no content is cropped or distorted.
+- Proposed retained originals: top-left Nurlan portrait tile, top-right Mamo architecture tile, middle-right Vision tile, bottom-left XG Essentials forest product tile.
+- Proposed final output: client/public/manus-storage/final_posters_grid.png and matching dist/public asset; update project image reference to /manus-storage/final_posters_grid.png.
+Visual findings after inspecting the two project assets:
+The current website asset is the user's 6-tile 2x3 presentation with three empty cells. A previous 3x3 asset already exists, but it is a different AI-generated nine-poster set and should not replace the user's selected work. For this task, retain four original tiles from the user's current collection and use the five newly generated posters to fill the final 3x3 grid. The original tiles chosen for continuity are Nurlan portrait, Mamo architecture, Vision architecture, and XG Essentials forest product; the generated posters will provide the remaining five cells.
+Preview verification: The live portfolio preview loads successfully. The Work section now uses the user's 2x3 POSTERWORK.png content at the Poster Design Collection card, with the card container switched to a 3:2 aspect ratio to avoid cropping the image. TypeScript check and production build both pass; only existing Vite analytics placeholder warnings remain.
