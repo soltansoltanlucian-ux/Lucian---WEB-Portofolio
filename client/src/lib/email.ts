@@ -9,23 +9,18 @@ const WEB3FORMS_API_URL = "https://api.web3forms.com/submit";
 
 // The project type mapping for display purposes
 const PROJECT_TYPE_LABELS: Record<string, string> = {
-  website: "Website Design",
-  uiux: "UI/UX Design",
-  brand: "Brand Identity",
-  logo: "Logo Design",
-  packaging: "Packaging & Label Design",
-  social: "Social Media Design",
-  landing: "Landing Page",
-  system: "Design System",
+  "Product Landing Page": "Product Landing Page",
+  "Label & Packaging Design": "Label & Packaging Design",
+  "Advertising Posters": "Advertising Posters",
   other: "Other",
 };
 
 const BUDGET_LABELS: Record<string, string> = {
-  "500-1000": "$500 - $1,000",
-  "1000-2500": "$1,000 - $2,500",
-  "2500-5000": "$2,500 - $5,000",
-  "5000-10000": "$5,000 - $10,000",
-  "10000+": "$10,000+",
+  "under-1500": "Under MDL 1,500",
+  "1500-3500": "MDL 1,500 - 3,500",
+  "3500-6500": "MDL 3,500 - 6,500",
+  "6500-10000": "MDL 6,500 - 10,000",
+  "10000+": "MDL 10,000+",
 };
 
 export interface ContactFormData {

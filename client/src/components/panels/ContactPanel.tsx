@@ -149,11 +149,8 @@ export default function ContactPanel({ preselectedService, onClearService }: Con
                 className="w-full bg-transparent border-b border-[#232323] py-3 text-[#F5F5F5] text-base focus:border-[#4F7CFF] focus:outline-none transition-colors duration-300 appearance-none"
               >
                 <option value="" className="bg-[#080808]">Select a service</option>
-                <option value="Website Design" className="bg-[#080808]">Website Design</option>
-                <option value="UI/UX Design" className="bg-[#080808]">UI/UX Design</option>
-                <option value="Logo Design" className="bg-[#080808]">Logo Design</option>
-                <option value="Premium Label & Packaging Design" className="bg-[#080808]">Premium Label & Packaging Design</option>
-                <option value="Social Media Design" className="bg-[#080808]">Social Media Design</option>
+                <option value="Product Landing Page" className="bg-[#080808]">Product Landing Page</option>
+                <option value="Label & Packaging Design" className="bg-[#080808]">Label & Packaging Design</option>
                 <option value="Advertising Posters" className="bg-[#080808]">Advertising Posters</option>
                 <option value="Other" className="bg-[#080808]">Other</option>
               </select>
@@ -171,11 +168,11 @@ export default function ContactPanel({ preselectedService, onClearService }: Con
                 className="w-full bg-transparent border-b border-[#232323] py-3 text-[#F5F5F5] text-base focus:border-[#4F7CFF] focus:outline-none transition-colors duration-300 appearance-none"
               >
                 <option value="" className="bg-[#080808]">Select budget range</option>
-                <option value="under-500" className="bg-[#080808]">Under $500</option>
-                <option value="500-1000" className="bg-[#080808]">$500 - $1,000</option>
-                <option value="1000-1500" className="bg-[#080808]">$1,000 - $1,500</option>
-                <option value="1500-2000" className="bg-[#080808]">$1,500 - $2,000</option>
-                <option value="2000+" className="bg-[#080808]">$2,000+</option>
+                <option value="under-1500" className="bg-[#080808]">Under MDL 1,500</option>
+                <option value="1500-3500" className="bg-[#080808]">MDL 1,500 - 3,500</option>
+                <option value="3500-6500" className="bg-[#080808]">MDL 3,500 - 6,500</option>
+                <option value="6500-10000" className="bg-[#080808]">MDL 6,500 - 10,000</option>
+                <option value="10000+" className="bg-[#080808]">MDL 10,000+</option>
               </select>
             </div>
 
