@@ -2,11 +2,9 @@ import { motion } from "framer-motion";
 
 export default function AboutPanel() {
   const skills = [
-    "Web Design",
-    "UI/UX Design",
-    "Logo Design",
-    "Packaging",
-    "Social Media Posters",
+    "Product Landing Pages",
+    "Label & Packaging Design",
+    "Advertising Posters",
   ];
 
   const fadeUp = {
@@ -42,10 +40,10 @@ export default function AboutPanel() {
           className="lg:col-span-7"
         >
           <p className="text-[#8A8A8A] text-base lg:text-lg leading-relaxed mb-6">
-            I'm a multidisciplinary designer with over 3 years of experience specializing in high-impact brand identities and digital experiences. My playground is <strong className="text-[#F5F5F5]">Figma</strong>, where I’ve mastered the art of turning complex ideas into seamless, pixel-perfect realities.
+            I’m Lucian Soltan, a designer with 3+ years of experience working in <strong className="text-[#F5F5F5]">Figma</strong>. I design and build simple, mobile-responsive product landing pages, and create original labels, packaging, and advertising posters for products and small brands.
           </p>
           <p className="text-[#8A8A8A] text-base lg:text-lg leading-relaxed mb-10">
-            I don't just build layouts; I craft evolving visual systems that grow with your business. I work with ambitious brands to create designs that don't just look beautiful — they perform and leave a lasting impression.
+            My focus is clear product presentation, thoughtful visual hierarchy, and practical designs that help visitors understand the product and know what to do next. Product landing pages can guide visitors to contact or order through Instagram or WhatsApp; they are not complex online stores or custom software products.
           </p>
 
           {/* Design Philosophy */}
@@ -54,7 +52,7 @@ export default function AboutPanel() {
               Design Philosophy
             </p>
             <p className="text-[#F5F5F5] text-lg font-medium leading-relaxed">
-              "Design isn't just about how it looks; it's about how it feels and functions. I create experiences that resonate instantly—because true talent is measured by impact, not just decades on a clock."
+              “Good design should make a product easier to understand and the next step clear.”
             </p>
           </div>
 
@@ -102,11 +100,11 @@ export default function AboutPanel() {
                   <span className="mt-2 block text-[9px] font-medium uppercase tracking-[0.12em] text-[#A0A0A0] lg:text-[10px]">Years Exp.</span>
                 </div>
                 <div className="border-x border-[#2A2A2A]">
-                  <span className="block text-2xl font-bold leading-none text-[#F5F5F5] lg:text-3xl">30+</span>
+                  <span className="block text-2xl font-bold leading-none text-[#F5F5F5] lg:text-3xl">15</span>
                   <span className="mt-2 block text-[9px] font-medium uppercase tracking-[0.12em] text-[#A0A0A0] lg:text-[10px]">Projects</span>
                 </div>
                 <div>
-                  <span className="block text-2xl font-bold leading-none text-[#F5F5F5] lg:text-3xl">10+</span>
+                  <span className="block text-2xl font-bold leading-none text-[#F5F5F5] lg:text-3xl">7+</span>
                   <span className="mt-2 block text-[9px] font-medium uppercase tracking-[0.12em] text-[#A0A0A0] lg:text-[10px]">Clients</span>
                 </div>
               </div>

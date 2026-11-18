@@ -49,7 +49,7 @@ export default function HomePanel({ onNavigate }: HomePanelProps) {
           transition={{ duration: 0.6, ease: [0.23, 1, 0.32, 1], delay: 0.2 }}
           className="text-base lg:text-xl text-[#8A8A8A] max-w-xl leading-[1.7] mb-12"
         >
-          I design modern websites, visual identities, labels and digital experiences that help businesses stand out.
+          I design and build simple, mobile-ready landing pages for individual products, and create original labels, packaging, and advertising posters. Each project presents the product clearly and guides customers toward the next step, such as contacting or ordering through Instagram or WhatsApp.
         </motion.p>
 
         {/* Stats Row */}
@@ -64,11 +64,11 @@ export default function HomePanel({ onNavigate }: HomePanelProps) {
             <span className="text-[11px] text-[#555] tracking-wide">Years Exp.</span>
           </div>
           <div>
-            <span className="block text-3xl font-bold text-[#F5F5F5]">30+</span>
+            <span className="block text-3xl font-bold text-[#F5F5F5]">15</span>
             <span className="text-[11px] text-[#555] tracking-wide">Projects</span>
           </div>
           <div>
-            <span className="block text-3xl font-bold text-[#F5F5F5]">10+</span>
+            <span className="block text-3xl font-bold text-[#F5F5F5]">7+</span>
             <span className="text-[11px] text-[#555] tracking-wide">Clients</span>
           </div>
         </motion.div>

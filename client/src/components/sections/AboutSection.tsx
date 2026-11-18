@@ -6,12 +6,9 @@ export default function AboutSection() {
   const { ref, isInView } = useInView(0.15);
 
   const skills = [
-    "Brand Identity",
-    "Web Design",
-    "UI/UX Design",
-    "Logo Design",
-    "Packaging",
-    "Social Media Posters",
+    "Product Landing Pages",
+    "Label & Packaging Design",
+    "Advertising Posters",
   ];
 
   return (
@@ -46,10 +43,10 @@ export default function AboutSection() {
               About
             </h2>
             <p className="text-[#8A8A8A] text-base lg:text-lg leading-relaxed mb-6">
-              I'm a multidisciplinary designer with over 3 years of experience specializing in high-impact brand identities and digital experiences. My playground is <strong className="text-[#F5F5F5]">Figma</strong>, where I’ve mastered the art of turning complex ideas into seamless, pixel-perfect realities.
+              I’m Lucian Soltan, a designer with 3+ years of experience working in <strong className="text-[#F5F5F5]">Figma</strong>. I design and build simple, mobile-responsive product landing pages, and create original labels, packaging, and advertising posters for products and small brands.
             </p>
             <p className="text-[#8A8A8A] text-base lg:text-lg leading-relaxed mb-10">
-              I don't just build layouts; I craft evolving visual systems that grow with your business. I work with ambitious brands to create designs that don't just look beautiful — they perform and leave a lasting impression.
+              My focus is clear product presentation, thoughtful visual hierarchy, and practical designs that help visitors understand the product and know what to do next. Product landing pages can guide visitors to contact or order through Instagram or WhatsApp; they are not complex online stores or custom software products.
             </p>
 
             {/* Design Philosophy */}
@@ -58,7 +55,7 @@ export default function AboutSection() {
                 Design Philosophy
               </p>
               <p className="text-[#F5F5F5] text-lg font-medium leading-relaxed">
-                "Design isn't just about how it looks; it's about how it feels and functions. I create experiences that resonate instantly—because true talent is measured by impact, not just decades on a clock."
+                “Good design should make a product easier to understand and the next step clear.”
               </p>
             </div>
 
@@ -102,11 +99,11 @@ export default function AboutSection() {
                     <span className="text-[11px] text-[#8A8A8A] tracking-wide">Years Exp.</span>
                   </div>
                   <div>
-                    <span className="block text-xl lg:text-2xl font-bold text-[#F5F5F5]">30+</span>
+                    <span className="block text-xl lg:text-2xl font-bold text-[#F5F5F5]">15</span>
                     <span className="text-[11px] text-[#8A8A8A] tracking-wide">Projects</span>
                   </div>
                   <div>
-                    <span className="block text-xl lg:text-2xl font-bold text-[#F5F5F5]">10+</span>
+                    <span className="block text-xl lg:text-2xl font-bold text-[#F5F5F5]">7+</span>
                     <span className="text-[11px] text-[#8A8A8A] tracking-wide">Clients</span>
                   </div>
                 </div>
