@@ -19,8 +19,8 @@ const services: Service[] = [
     title: "Product Landing Page",
     description:
       "Design and build of a simple, mobile-responsive website that presents one product clearly and guides visitors to contact or order through Instagram or WhatsApp.",
-    price: "From MDL 6,500",
-    delivery: "7–10 business days",
+    price: "MDL 6,500+",
+    delivery: "7–10 days",
     scope: [
       "One page for one product",
       "Up to five content sections",
@@ -37,10 +37,10 @@ const services: Service[] = [
     description:
       "Original visual design for a product label or packaging, developed to present the product clearly and consistently.",
     priceDetails: [
-      "Label design only: from MDL 1,500",
-      "Full label and packaging design for one product: from MDL 3,500",
+      "Label only: MDL 1,500+",
+      "Label + packaging: MDL 3,500+",
     ],
-    delivery: "7–12 business days, depending on scope",
+    delivery: "7–12 days",
     scope: [
       "One product or SKU",
       "One initial visual direction",
@@ -58,10 +58,10 @@ const services: Service[] = [
     description:
       "Original poster designs for products, offers, launches, and local promotions, created in Figma.",
     priceDetails: [
-      "One poster: from MDL 500",
-      "Set of three posters: from MDL 1,200",
+      "1 poster: MDL 500+",
+      "Set of 3: MDL 1,200+",
     ],
-    delivery: "One poster: 2–3 business days · Set of three: 4–6 business days",
+    delivery: "1 poster: 2–3 days · 3 posters: 4–6 days",
     scope: [
       "One round of minor revisions",
       "Client supplies or approves the final copy, product details, and photographs",
@@ -114,7 +114,7 @@ export default function ServicesPanel({ onNavigate }: ServicesPanelProps) {
         </p>
       </motion.div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-px bg-[#232323]">
+      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 bg-transparent border-l border-t border-[#232323]">
         {services.map((service, i) => (
           <motion.div
             key={service.id}
@@ -123,7 +123,7 @@ export default function ServicesPanel({ onNavigate }: ServicesPanelProps) {
             transition={{ delay: i * 0.04, duration: 0.6, ease: [0.23, 1, 0.32, 1] }}
             onMouseEnter={() => setHoveredId(service.id)}
             onMouseLeave={() => setHoveredId(null)}
-            className={`relative bg-[#080808] p-6 lg:p-8 group transition-all duration-500 ${
+            className={`relative bg-[#080808] border-r border-b border-[#232323] p-6 lg:p-8 group transition-all duration-500 ${
               !service.available ? "opacity-75" : ""
             }`}
             style={{
@@ -156,22 +156,23 @@ export default function ServicesPanel({ onNavigate }: ServicesPanelProps) {
 
             {service.available ? (
               <>
-                <div className="flex flex-col gap-3 mb-5 sm:flex-row sm:items-start sm:gap-4">
-                  <div className="min-w-0 flex-1">
-                    <span className="text-[11px] text-[#555] tracking-wide">Starting at</span>
+                <div className="grid grid-cols-[minmax(0,1.25fr)_minmax(0,1fr)] gap-4 mb-5">
+                  <div className="min-w-0">
+                    <span className="text-[10px] text-[#555] uppercase tracking-[0.08em]">Price</span>
                     {service.price && (
-                      <p className="text-sm font-semibold text-[#F5F5F5]">{service.price}</p>
+                      <p className="text-[13px] font-semibold text-[#F5F5F5] leading-snug">{service.price}</p>
                     )}
-                    {service.priceDetails?.map((price) => (
-                      <p key={price} className="text-sm font-semibold text-[#F5F5F5] leading-relaxed">
+                    <div className="space-y-1">
+                      {service.priceDetails?.map((price) => (
+                      <p key={price} className="text-[13px] font-semibold text-[#F5F5F5] leading-snug">
                         {price}
                       </p>
                     ))}
+                    </div>
                   </div>
-                  <div className="hidden w-px h-8 bg-[#232323] sm:block" />
-                  <div className="min-w-0 flex-1">
-                    <span className="text-[11px] text-[#555] tracking-wide">Delivery</span>
-                    <p className="text-sm font-semibold text-[#F5F5F5] leading-relaxed">
+                  <div className="min-w-0 border-l border-[#232323] pl-4">
+                    <span className="text-[10px] text-[#555] uppercase tracking-[0.08em]">Delivery</span>
+                    <p className="text-[13px] font-semibold text-[#F5F5F5] leading-snug">
                       {service.delivery}
                     </p>
                   </div>
