@@ -24,8 +24,8 @@ const projects: Project[] = [
     title: "AGESSENTIALS STORE",
     category: "Product Landing Page",
     year: "2025",
-    image: "/manus-storage/agessentials_store_fullpage.png",
-    fullImage: "/manus-storage/agessentials_store_fullpage.png",
+    image: "/manus-storage/agessentials_store_fullpage.webp",
+    fullImage: "/manus-storage/agessentials_store_fullpage.webp",
     liveUrl: "https://agessentials.store/",
   },
   {
@@ -145,7 +145,7 @@ export default function WorkPanel() {
                 <img
                   src={project.image}
                   alt={project.title}
-                  className="w-full h-full object-cover"
+                  className={`w-full h-full object-cover ${project.id === 5 ? "object-top" : ""}`}
                 />
               </motion.div>
               {/* Hover overlay with project name */}
