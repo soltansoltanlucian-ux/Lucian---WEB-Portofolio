@@ -8,6 +8,7 @@ interface Project {
   year: string;
   image: string;
   fullImage?: string;
+  liveUrl?: string;
 }
 
 const projects: Project[] = [
@@ -17,6 +18,15 @@ const projects: Project[] = [
     category: "Premium Label & Packaging Design",
     year: "2025",
     image: "/manus-storage/project1_agsentials.png",
+  },
+  {
+    id: 5,
+    title: "AGESSENTIALS STORE",
+    category: "Product Landing Page",
+    year: "2025",
+    image: "/manus-storage/agessentials_store_fullpage.png",
+    fullImage: "/manus-storage/agessentials_store_fullpage.png",
+    liveUrl: "https://agessentials.store/",
   },
   {
     id: 2,
@@ -231,7 +241,20 @@ export default function WorkPanel() {
                   <h3 className="text-xl font-semibold text-[#F5F5F5]">{projects[lightboxIndex].title}</h3>
                   <p className="text-sm text-[#8A8A8A] mt-1">{projects[lightboxIndex].category}</p>
                 </div>
-                <span className="text-xs text-[#555] font-medium">{projects[lightboxIndex].year}</span>
+                <div className="flex items-center gap-5">
+                  <span className="text-xs text-[#555] font-medium">{projects[lightboxIndex].year}</span>
+                  {projects[lightboxIndex].liveUrl && (
+                    <a
+                      href={projects[lightboxIndex].liveUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      onClick={(e) => e.stopPropagation()}
+                      className="text-xs font-medium text-[#4F7CFF] transition-colors hover:text-[#7D9DFF]"
+                    >
+                      Visit Live Website ↗
+                    </a>
+                  )}
+                </div>
               </div>
               {/* Navigation dots */}
               <div className="flex gap-2 mt-4">
